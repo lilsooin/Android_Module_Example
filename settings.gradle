@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "module_example"
 include ':app'
+include ':apple'
+include ':samsung'
+include ':microsoft'
+
