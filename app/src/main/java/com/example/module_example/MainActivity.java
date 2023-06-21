@@ -3,6 +3,7 @@ package com.example.module_example;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,27 +18,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        switch (getService()) {
-            case A_COMPANY:
-                System.out.println("Welcome to A company");
-                break;
+        Company service = getService();
 
-            case B_COMPANY:
-                System.out.println("Welcome to B company");
-                break;
-
-            case C_COMPANY:
-                System.out.println("Welcome to C company");
-                break;
-
-            default:
-                break;
+        if (service == Company.A_COMPANY || service == Company.B_COMPANY) {
+            System.out.println("Hello there");
+        } else if(service == Company.C_COMPANY) {
+            System.out.println("Hola");
         }
     }
 
     public Company getService() {
         // ... A_COMPANY or B_COMPANY or C_COMPANY
 
+        // some code
         return Company.A_COMPANY;
     }
 }
