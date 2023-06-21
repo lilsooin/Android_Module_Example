@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // A or B or C
         Company service = getService();
 
         if (service == Company.A_COMPANY || service == Company.B_COMPANY) {
