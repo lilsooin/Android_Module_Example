@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.core.User;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -12,30 +14,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         System.out.println("Samsung User");
-        System.out.println(getName());
-        System.out.println(getEmail());
-        System.out.println(getAge());
-        System.out.println(getSex());
-        System.out.println(getNationality());
-    }
-
-    // name, email, age, sex, nationality
-    private String getName() {
-        return "Tim";
-    }
-
-    private String getEmail() {
-        return "abc@gmail.com";
-    }
-    private short getAge() {
-        return 30;
-    }
-
-    private String getSex(){
-        return "Male";
-    }
-
-    private String getNationality() {
-        return "Ukraine";
+        System.out.println(User.getName());
+        System.out.println(User.getEmail());
+        System.out.println(User.getAge());
+        System.out.println(User.getSex());
+        System.out.println(User.getNationality());
     }
 }

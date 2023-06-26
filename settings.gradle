@@ -18,3 +18,4 @@ include ':apple'
 include ':samsung'
 include ':microsoft'
 
+include ':core'
